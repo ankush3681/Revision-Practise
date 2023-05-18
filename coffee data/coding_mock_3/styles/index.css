@@ -1,0 +1,45 @@
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 15px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+body {
+    background-color: #f0f1f1;
+}
+
+form>input {
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+form>select {
+    padding: 10px;
+    width: 83%;
+    margin: auto;
+}
+
+form>label {
+    width: 82%;
+    margin: auto;
+}
+
+form>button {
+    color: white;
+    background-color: black;
+}
+
+#total-section {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: auto;
+    background-color: #bdbdbd;
+    padding: 10px;
+    border-radius: 5px;
+}

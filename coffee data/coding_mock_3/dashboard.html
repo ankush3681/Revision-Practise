@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/dashboard.css">
+    <title>Dashboard Page</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="./index.html">
+            <p>Orders</p>
+        </a>
+        <a href="./dashboard.html">
+            <p>Dashboard</p>
+        </a>
+    </div>
+    <div class="dropdown">
+        <select name="" id="Filter" onchange="HandleFilterByType(value)">
+            <option value="">--filter by coffee type--</option>
+            <option value="Americano">Americano</option>
+            <option value="Expresso">Expresso</option>
+            <option value="Cappuccino">Cappuccino</option>
+        </select>
+        <select name="" id="Filter" onchange="HandleFilterBySize(value)">
+            <option value="">--filter by coffee Size--</option>
+            <option value="Small">Small</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>
+        </select>
+        <select name="" id="Sort" onchange="HandleSort(value)">
+            <option value="">--sort--</option>
+            <option value="lth">Price: Low to High</option>
+            <option value="htl">Price: High to Low</option>
+        </select>
+    </div>
+    <div id="data-render">
+
+    </div>
+    <div id="pagination-buttons"></div>
+</body>
+
+</html>
+<script src="./scripts/dashboard.js"></script>
