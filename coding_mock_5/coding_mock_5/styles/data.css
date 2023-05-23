@@ -1,0 +1,78 @@
+#data-render {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 80%;
+    gap: 10px 20px;
+    margin: auto;
+}
+
+#dog-card {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 5px;
+}
+
+#dog-card>b {
+    text-align: center;
+    width: fit-content;
+}
+
+body {
+    background-color: #CBD4C2;
+}
+
+.nav-2 {
+    display: flex;
+    justify-content: space-evenly;
+    width: 97%;
+    margin: auto;
+    padding: 1rem;
+    margin-bottom: 20px;
+    background-color: #247BA0;
+}
+
+.nav-2>select {
+    width: 20%;
+    padding: 5px;
+}
+
+.nav-2>select>option {
+    text-align: center;
+}
+
+.nav-2>input {
+    width: 30%;
+    padding: 5px;
+}
+
+.modal {
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    position: fixed;
+    top: 20%;
+    left: 35%;
+    padding: 10px;
+    display: none;
+    border-radius: 10px;
+}
+
+.modal>form>input {
+    display: block;
+    width: 80%;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.modal>form>select {
+    display: block;
+    width: 82%;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.modal>button {
+    display: block;
+    width: 80%;
+    margin-bottom: 10px;
+    padding: 5px;
+}

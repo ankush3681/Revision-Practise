@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+    <style>
+        body {
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background-color: #247BA0;
+        }
+
+        form>input {
+            display: block;
+            width: 80%;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+
+        form {
+            background-color: #7899a8;
+            width: 50%;
+            padding: 1rem;
+        }
+
+        form>select {
+            display: block;
+            width: 82%;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" onsubmit="ValidateAndPost(event)">
+        <label for="">Name of breed</label>
+        <input type="text" name="" id="name" placeholder="Name of breed here">
+        <label for="">Age of pet</label>
+        <input type="number" name="" id="age" placeholder="Age of pet">
+        <select name="" id="gender">
+            <option value="">--gender--</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+        <label for="">Place</label>
+        <input type="text" name="" id="place" placeholder="place here">
+        <input type="submit" value="Register" id="register-btn">
+        <a href="../index.html">Home</a>
+    </form>
+</body>
+
+</html>
+<script src="../scripts/user.js"></script>

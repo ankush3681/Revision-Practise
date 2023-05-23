@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reports.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <title>Reports page</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="../pages/login.html">Login</a>
+        <a href="../pages/data.html">Data</a>
+        <a href="../pages/reports.html">Reports</a>
+        <button onclick="Logout()">Logout</button>
+    </div>
+    <table>
+        <thead style="background-color: #247BA0;color: white;height: 50px;">
+            <th>Total number of dogs attending</th>
+            <th>Number of female dogs attending</th>
+            <th>Number of Male dogs attending</th>
+            <th>Average age group of dogs attending</th>
+        </thead>
+        <tbody style="background-color: #90b2c1;color: white;height: 50px;">
+            <tr>
+                <td id="total-dogs">0</td>
+                <td id="female-dogs">0</td>
+                <td id="male-dogs">0</td>
+                <td id="avg-age">0</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
+<script src="../scripts/reports.js"></script>

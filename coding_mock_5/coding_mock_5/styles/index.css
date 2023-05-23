@@ -1,0 +1,31 @@
+.buttons {
+    margin: auto;
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.buttons>button {
+    width: 200px;
+    height: 50px;
+    background: #6E8898;
+    color: white;
+}
+
+h1 {
+    /* background-color: #D3D0CB; */
+    color: #a5becc;
+}
+
+body {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #247BA0;
+}
