@@ -11,9 +11,33 @@ import {
   Heading,
   Text,
   useColorModeValue,
-} from '@chakra-ui/react'
+} from '@chakra-ui/react';
+import { useContext, useState } from 'react';
+import axios from "axios";
+import { useNavigate } from 'react-router-dom';
+import { Authcontext } from './Context';
+
 
 export default function Login() {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const navigate = useNavigate();
+    const {authLogin} = useContext(Authcontext);
+
+    let obj={email,password};
+
+    const login = () =>{
+        axios.post("https://reqres.in/api/login",{
+            email,password
+        })
+        .then((res)=>{
+            console.log(res);
+            authLogin();
+           navigate("/dash")
+        })
+        .catch((err)=>console.log(err))
+    }
+
   return (
     <Flex
       minH={'100vh'}
@@ -35,11 +59,11 @@ export default function Login() {
           <Stack spacing={4}>
             <FormControl id="email">
               <FormLabel>Email address</FormLabel>
-              <Input type="email" />
+              <Input type="email" value={email} onChange={(e)=>setEmail(e.target.value)}/>
             </FormControl>
             <FormControl id="password">
               <FormLabel>Password</FormLabel>
-              <Input type="password" />
+              <Input type="password" value={password} onChange={(e)=>setPassword(e.target.value)}/>
             </FormControl>
             <Stack spacing={10}>
               <Stack
@@ -54,7 +78,9 @@ export default function Login() {
                 color={'white'}
                 _hover={{
                   bg: 'blue.500',
-                }}>
+                }}
+                onClick={login}
+                >
                 Sign in
               </Button>
             </Stack>
